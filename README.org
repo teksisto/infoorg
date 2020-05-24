@@ -12,7 +12,7 @@
 
   Текст можно:
   - [[https://teksisto.github.io/infoorg][прочитать онлайн]]
-  - [[скачать в формате epub
+  - [[https://github.com/teksisto/infoorg/releases][скачать в формате epub]]
 
   Приходите обсуждать текст в:
   - группу в FreeFeed - https://freefeed.net/infoorg
