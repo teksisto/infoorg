@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY simple "http://b29.ru/ontology/simple.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://b29.ru/ontology/simple.owl#"
+     xml:base="http://b29.ru/ontology/simple.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:simple="http://b29.ru/ontology/simple.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://b29.ru/ontology/simple.owl"/>
+    
+
+
+    <!-- 
+    /////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    /////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Class rdf:about="&owl;Thing"/>    
+
+
+    <!-- Text -->
+
+    <owl:Class rdf:about="&simple;Text">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="&simple;Book">
+        <rdfs:subClassOf rdf:resource="&simple;Text"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="&simple;Quote">
+        <rdfs:subClassOf rdf:resource="&simple;Text"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="&simple;TextDiary">
+        <rdfs:subClassOf rdf:resource="&simple;Text"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="&simple;VideoSubtitles">
+        <rdfs:subClassOf rdf:resource="&simple;Text"/>
+    </owl:Class>
+    
+
+    <!-- Sound -->
+
+    <owl:Class rdf:about="&simple;Sound">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+    <owl:Class rdf:about="&simple;AudioDiary">
+        <rdfs:subClassOf rdf:resource="&simple;Sound"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="&simple;AudioQuote">
+        <rdfs:subClassOf rdf:resource="&simple;Sound"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="&simple;Soundtrack">
+        <rdfs:subClassOf rdf:resource="&simple;Sound"/>
+    </owl:Class>
+    
+    <owl:Class rdf:about="&simple;Music">
+        <rdfs:subClassOf rdf:resource="&simple;Sound"/>
+    </owl:Class>
+    
+    <owl:Class rdf:about="&simple;MusicalAlbum">
+        <rdfs:subClassOf rdf:resource="&simple;Music"/>
+    </owl:Class>
+    
+    <owl:Class rdf:about="&simple;MusicalTrack">
+        <rdfs:subClassOf rdf:resource="&simple;Music"/>
+    </owl:Class>
+    
+
+    <!-- Video -->
+
+    <owl:Class rdf:about="&simple;Video">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="&simple;Film">
+        <rdfs:subClassOf rdf:resource="&simple;Video"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="&simple;TvSeries">
+        <rdfs:subClassOf rdf:resource="&simple;Video"/>
+    </owl:Class>
+    
+    <owl:Class rdf:about="&simple;TvSeriesEpisod">
+        <rdfs:subClassOf rdf:resource="&simple;TvSeries"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="&simple;TvSeriesSeason">
+        <rdfs:subClassOf rdf:resource="&simple;TvSeries"/>
+    </owl:Class>
+
+
+    <!-- Bookmark -->
+
+    <owl:Class rdf:about="&simple;Bookmark">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+
+
+    <!-- Image -->
+
+    <owl:Class rdf:about="&simple;Image">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="&simple;Photo">
+        <rdfs:subClassOf rdf:resource="&simple;Image"/>
+    </owl:Class>
+    
+    <owl:Class rdf:about="&simple;Picture">
+        <rdfs:subClassOf rdf:resource="&simple;Image"/>
+    </owl:Class>
+    
+    <owl:Class rdf:about="&simple;Cover">
+        <rdfs:subClassOf rdf:resource="&simple;Image"/>
+    </owl:Class>
+    
+    <owl:Class rdf:about="&simple;AlbumCover">
+        <rdfs:subClassOf rdf:resource="&simple;Cover"/>
+    </owl:Class>
+    
+    <owl:Class rdf:about="&simple;BookCover">
+        <rdfs:subClassOf rdf:resource="&simple;Cover"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="&simple;FilmCover">
+        <rdfs:subClassOf rdf:resource="&simple;Cover"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="&simple;Screenshot">
+        <rdfs:subClassOf rdf:resource="&simple;Image"/>
+    </owl:Class>
+
+    
+    <!-- Contact -->
+
+    <owl:Class rdf:about="&simple;Contact">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+    <!-- Software -->
+
+    <owl:Class rdf:about="&simple;Software">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+
+
+</rdf:RDF>
+
+
