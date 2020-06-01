@@ -1,5 +1,6 @@
 #+TITLE: Infoorg
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
+#+OPTIONS: H:4
 
 [[./images/pepe_silvia.png]]
 
