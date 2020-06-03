@@ -1,5 +1,7 @@
 #+TITLE: Infoorg
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/web.css">
+#+LINK: wiki https://en.wikipedia.org/wiki/%s
 #+OPTIONS: H:4
 
 [[./images/pepe_silvia.png]]
@@ -19,8 +21,8 @@
       функциональности софта, который регулярно появляется;
     - поговорить про практики, которые стоят за инструментами, потому
       что инструменты создаются для обслуживание практик;
-    - вписать вопросы персонального информационного менеджера в
-      контекст различной [[infoorg-professionals][профессиональной деятельности и образования]].
+    - вписать вопросы инфоорга в контекст различной [[infoorg-professionals][профессиональной
+      деятельности и образования]].
 
   Общая структура текста:
     - немного про [[infoorg-context][область инфоорга]] и зачем он;

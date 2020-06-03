@@ -9,3 +9,9 @@ a[href*="wikipedia"] {
   background-size: 1em 1em;
   padding-right: 1em;
 }
+
+a[href*="freefeed"] {
+  background: url('../Images/freefeed.png') no-repeat 100% 0;
+  background-size: 1em 1em;
+  padding-right: 1em;
+}
