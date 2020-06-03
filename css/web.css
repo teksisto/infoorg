@@ -1,0 +1,11 @@
+div[class*="outline-text"] a[href*="#org"] {
+  background: url('../images/bring_front.png') no-repeat 100% 0;
+  background-size: 1em 1em;
+  padding-right: 1em;
+}
+
+a[href*="wikipedia"] {
+  background: url('../images/wikipedia.png') no-repeat 100% 0;
+  background-size: 1em 1em;
+  padding-right: 1em;
+}

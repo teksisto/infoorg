@@ -1,0 +1,11 @@
+a[href*="index_split"] {
+  background: url('../Images/bring_front.png') no-repeat 100% 0;
+  background-size: 1em 1em;
+  padding-right: 1em;
+}
+
+a[href*="wikipedia"] {
+  background: url('../Images/wikipedia.png') no-repeat 100% 0;
+  background-size: 1em 1em;
+  padding-right: 1em;
+}

@@ -51,7 +51,7 @@
     - через телеграмм - https://t.me/teksisto
     - через гуглопочту ~teksisto~
 
-  Все книги, на которые я ссылаюсь, можно скачать в [[https://en.wikipedia.org/wiki/Library_Genesis][библиотеке
+  Все книги, на которые я ссылаюсь, можно скачать в [[wiki:Library_Genesis][библиотеке
   Genesis]]. Для книг обычно указано издательство, потому что для меня
   это маркер качества.
 
@@ -254,8 +254,9 @@
 
 ** Добавление данных <<capture>>
 
-   Как данные попадают в систему? Поскольку много новых данных
-   приходит из интернета, тут будет много про него.
+   Как данные попадают в систему?
+
+   Захват должен сохранять контекст.
 
 *** Импорт
 
@@ -495,7 +496,7 @@
    неделимые. В том числе ресурсом должны быть метаданные, потому что
    на них тоже надо как-то ссылаться и навешивать на них метаданные.
 
-** Блочный текстовый редактор
+** Блочный текстовый редактор <<block-text-editor>>
 
    Любой текст, например книга, имеет структуру, которая сейчас
    представлена в основном неявно. Есть разделы, подразделы,
@@ -1250,17 +1251,31 @@
 
 * Задача хранения <<storage-bottle-neck>>
 
+   Здесь хранятся онтологии, метаданные и структурированные
+   данные. Здесь же лежат [[block-text-editor][блочные тексты]], потому что они достаточно
+   мелко нарезаны.
+
+   "Физически" многие ресурсы хранятся все равно в файловой системе,
+   базе или вебе. В базу они попадают как [[https://en.wikipedia.org/wiki/URL][URL]] (который "location on a
+   computer network and a mechanism for retrieving it"). URL
+   обслуживают какие-то хендлеры протоколов, но внутри системы это
+   получает уникальный идентификатор и все дальнейшие манипуляции
+   производятся с ним.
+
    Самое вменяемое решение, которое я вижу – это RDF. RDF хорошо
    решает задачи [[identification][идентификации]], [[storage][хранения]] и [[classification][классификации]], но
-   продалбывает [[structure][структурирование]].
+   продалбывает [[structure][структурирование]], самую решенную в мире
+   проблему. Причем продалбывает намерянно и за сотни нефти, потому
+   что исходит из [[open-world-assumtion][open world assumtion]].
 
    Сначала про него можно почитать в статье [[https://en.wikipedia.org/wiki/Resource_Description_Framework][RDF]] на википедии, а потом
-   перейти к двум книжкам:
+   перейти к трем книжкам:
 
    - [[https://mitpress.mit.edu/books/semantic-web-primer-second-edition][A Semantic Web Primer (MIT Press)]]
    - [[https://www.elsevier.com/books/semantic-web-for-the-working-ontologist/allemang/978-0-12-385965-5][Semantic Web for the Working Ontologist (Morgan-Kaufman)]]
+   - [[https://www.oreilly.com/library/view/learning-sparql-2nd/9781449371449/][Learning SPARQL (O'Reilly)]]
 
-   Параллельно можно читать стандарты в разделе [[https://www.w3.org/standards/semanticweb/][Semantic web]] на сайте
+   Параллельно можно читать тексты в разделе [[https://www.w3.org/standards/semanticweb/][Semantic web]] на сайте
    W3C.
 
 ** Как это все может выглядеть на практике
@@ -1543,7 +1558,7 @@
 
 
 ** Проблемы rdf
-*** Open world assumption
+*** Open world assumption <<open-world-assumtion>>
 
     RDF разрабатывался для semantic web и основывается на [[https://en.wikipedia.org/wiki/Open-world_assumption][open world
     assumption]]. В нем многое сделано хорошо, но это мешает возможности
@@ -1574,9 +1589,10 @@
 * История <<history>>
 ** (1945) Vannevar Bush — As We May Think
 
-   The Atlantic: [[http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/][As We May Think]]
+   Wiki: [[https://en.wikipedia.org/wiki/Memex][Memex]]
 
-   Wikipedia: [[https://en.wikipedia.org/wiki/Memex][Memex]]
+   The Atlantic -- [[http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/][As We May Think]]
+   Life Magazine -- [[http://worrydream.com/refs/Bush%20-%20As%20We%20May%20Think%20(Life%20Magazine%209-10-1945).pdf][As We May Think]]
 
 ** (1967) Andries van Dam, Ted Nelson — Hypertext Editing System
 
@@ -1634,6 +1650,8 @@
 
    [[https://en.wikipedia.org/wiki/HyperCard][Wiki]]
 
+   [[https://vintageapple.org/macprogramming/pdf/HyperCard_Users_Guide_1987.pdf][HyperCard User Manual (1987)]]
+
 ** (1991) David Gifford — Semantic file systems
 
    Если коротко, то это [[https://en.wikipedia.org/wiki/Virtual_file_system][виртуальная файловая система]], в которой для
@@ -1689,10 +1707,13 @@
 
 ** (2000) MusicBrainz
 
-   Отлично прописанная онтология для музыки. Last.fm забирает данные
-   именно отсюда.
+   Хорошо прописанная [[classification][онтология]] для музыки, и описания альбомов на
+   основе это онтологии.
 
-   https://musicbrainz.org/
+   Есть их же [[https://picard.musicbrainz.org/][тулза]], которая умеет как Shazam опозновать трек и прописывать
+   в него метаденные из их базы.
+
+   [[https://musicbrainz.org][musicbrainz.org]]
 
 ** (2001) Eric Kim — Purple
 
@@ -1700,6 +1721,13 @@
    для блочных элементов в html якоря со ссылками. Реализация идеи Нельсона.
 
    https://en.wikipedia.org/wiki/Purple_Numbers
+
+** (2002) Last.fm
+
+   Скроблинг как решение задачи [[capture][захвата]] прослушиваемой
+   музыки. Забирает информацию о треках и исполнителях из MusicBrainz.
+
+   Wiki: [[https://en.wikipedia.org/wiki/Last.fm][Last.fm]]
 
 ** (2001) Tim Berners-Lee — Semantic Web
 
@@ -1863,7 +1891,9 @@
    Теги на основе заголовков статей в википедии. Позволяют получить
    для тега хорошо прописанную семантику, в том числе на разных
    языках. Какая-то инкарнация этой идеи вроде используется в facebook
-   для отмечания интересов пользователя.
+   для отмечания интересов пользователя. Фолксономии как-то не очень
+   работают, давайте попробуем добавить тегам нормально прописанное
+   значение.
 
    #+BEGIN_QUOTE
      CommonTag was a short-lived attempt in 2009 by Yahoo
@@ -1957,7 +1987,6 @@
    http://tiddlywiki.com/
 
 * Ссылки <<bookmarks>>
-
 ** FreeFeed
 
    Группы:
@@ -2001,6 +2030,9 @@
 
 ** Учебные заведения <<education>>
 
+   Вы только посмотрите на required readings в учебной программе
+   Беркли. Где-то мы многое из этого уже видели.
+
    [[http://www.ischool.berkeley.edu/][UC Berkeley School of Information]]
    - [[https://bcourses.berkeley.edu/courses/1247347/assignments/syllabus][INFO202: Information Organization and Retrieval (Fall 2014)]]
 
@@ -2010,6 +2042,7 @@
 ** Термины
 
    - [[https://en.wikipedia.org/wiki/Information_science][Information science]]
+   - [[https://en.wikipedia.org/wiki/Conceptualization_(information_science)][Conceptualization (information science)]]
    - [[https://en.wikipedia.org/wiki/Personal_information_manager][Personal information manager]]
    - [[https://en.wikipedia.org/wiki/Semantic_Web][Semantic Web]]
    - [[https://en.wikipedia.org/wiki/Semantic_desktop][Semantic desktop]]
@@ -2050,7 +2083,7 @@
    Методологическое:
    - Keeping Found Things Found (Morgan-Kaufman)
    - The Discipline of Organizing (MIT Press)
-
+   - Sönke Ahrens -- [[https://takesmartnotes.com/][How to Take Smart Notes]]
    Художественное:
    - Игра в бисер (Герман Гессе)
 
