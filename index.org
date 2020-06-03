@@ -35,16 +35,21 @@
   По адресу [[https://teksisto.github.io/infoorg/][teksisto.github.io/infoorg]] всегда лежит самая свежая
   версия. Исходники в формате org-mode лежат в [[https://github.com/teksisto/infoorg][репозитории]] на GitHub.
 
+  Текст можно [[https://github.com/teksisto/infoorg/releases][скачать в формате epub]]. Сейчас я заливаю его руками, поэтому
+  сейчас он обновляется где-то раз в несколько дней. Под это тоже [[https://github.com/teksisto/infoorg/issues/3][есть issue]].
+
+  Ссылки маркируются иконками:
+  - [[history][внутренняя ссылка]] показывается с иконкой "bring front";
+  - [[https://en.wikipedia.org][ссылка на википедию]] (en);
+  - [[https://freefeed.net][ссылка на freefeed]];
+  - [[https://google.com][обычная ссылка]] показывается без иконки.
+
   Чтобы сослаться на раздел, надо скопировать ссылку из оглавления
   слева. Чтобы сослаться на какое-то конкретное место можно открыть
   [[https://github.com/teksisto/infoorg/blame/master/index.org][исходник в org-mode]] (это просто текст) и скопировать ссылку из
   номера строчки.
 
-  Текст можно [[https://github.com/teksisto/infoorg/releases][скачать в формате epub]]. Внутренние ссылки в нем сейчас
-  не работают. Под это [[https://github.com/teksisto/infoorg/issues/2][есть issue]]. Пока я делаю его руками, поэтому
-  сейчас он обновляется где-то раз в неделю. Под это тоже [[https://github.com/teksisto/infoorg/issues/3][есть issue]].
-
-  Приходите обсуждать тему и текст в:
+  Приходите обсуждать тему инфоорга в:
     - группу в FreeFeed - https://freefeed.net/infoorg (это такой формат
       между блогом и чатом)
     - канал в телеграме - https://t.me/infoorg
@@ -179,7 +184,7 @@
      с ними обходятся;
    - люди ведут дневники, делают ретроспективы, адаптируют какие-то
      практики под себя;
-   - бизнес может рассказать про нструменты и практики принятия
+   - бизнес может рассказать про инструменты и практики принятия
      решений, сохранения знаний и треккинга задач;
    - государствам, которым надо решать задачи типа единых
      классификаторов.
@@ -254,7 +259,7 @@
    описывает, но и где оно лежит. Хранение должно быть отделено от
    доступа.
 
-** Добавление данных <<capture>>
+** обавление данных <<capture>>
 
    Как данные попадают в систему?
 
@@ -406,7 +411,7 @@
     совмещено с репрезентацией и отобразить это другим способом уже не
     получится автоматически.
 
-*** Множество способов отображения текста
+*** Множество способов отображения текста <<representation-adaptive>>
 
     Это так же касается не только структур данных, которые отображают
     отношения между объектами, но и текста. Текст тоже можно показывать
@@ -462,7 +467,7 @@
 * Чего мне хочется от информационного менеджера <<i-suggest-to>>
 ** Пользовательские онтологии
 
-   Возможность самому концептуализировать и описывать объекты, которые
+   Возможность самому [[wiki:Conceptualization_(information_science)][концептуализировать]] и описывать объекты, которые
    хранятся в системе, без программирования и изменения схемы БД.
 
    Возможность самому создавать классы объектов и взаимосвязи между
@@ -480,6 +485,8 @@
 
    Возможность класть в значение атрибута не только литералы (число,
    строка, дата), но и ссылки на другие ресурсы.
+
+   Возможность автоматом проставлять обратные связи.
 
 ** Абстракция ресурса
 
@@ -508,11 +515,12 @@
    прикреплено быть не может.
 
    В HTML тоже есть некая концепция структура текста с правилами как
-   она должна отображаться. [[http://w3schools-fa.ir/html/html5_new_elements.html][В HTML5 этого все больше]]. В первом
-   приближении, это предложение сделать то, что сейчас в HTML
-   называется блочными элементами, отдельно хранимым и связанным
-   метаданными. Каждый параграф, каждый список, элемент списка, каждую
-   ячейку таблицы.
+   она должна отображаться. [[http://w3schools-fa.ir/html/html5_new_elements.html][В HTML5 этого все больше]]. Так же в HTML
+   есть понятие связанных документов через тег [[wiki:Link_relation][link]] (например
+   следующий/предыдущий документ). В первом приближении, это
+   предложение сделать все то, что сейчас в HTML называется [[https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements][блочными
+   элементами]], отдельно хранимым и связанным метаданными. Каждый
+   параграф, каждый список, элемент списка, каждую ячейку таблицы.
 
    Концептуализация текста может быть разной, она например одна у
    книги и другая у сценария.
@@ -760,7 +768,7 @@
     - все ресурсы, которые ссылаются на данный ([[https://en.wikipedia.org/wiki/Backlink][back links]]);
     - все ресурсы на которые ссылается он сам;
     - версии этого ресурса (как в смысле "версионность текста", так и
-      всмысле "разные редакции/переводы одной книги").
+      в смысле "разные редакции/переводы одной книги").
 
     Дело в том, что ни жесткое дерево, ни запутанный граф сами по себе
     не подходят для хранения. Часть данных всегда упорядочена, часть
@@ -800,7 +808,7 @@
 
 *** Жизненный цикл контекст--ресурс
 
-    У ресурса форма для быстрого поста начинает немного другую
+    У ресурса форма для быстрого поста начинает играть немного другую
     роль. Как только через нее добавляется ресурс, который не входит в
     дефолтный запрос, ресурс сам превращается в новый контекст,
     который отображается на верхнем уровне, там же, где отображается
@@ -851,6 +859,8 @@
    - [[https://en.wikipedia.org/wiki/Parallel_text][Parallel text]]
    - [[https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D1%82%D0%B5%D0%BA%D1%81%D1%82_(%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D0%BA%D0%B0_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D1%8F)][Обучение через чтение параллельных текстов]]
    - [[https://www.w3.org/Submission/epub-a11y/#sec-mo][EPUB Accessibility 1.0 — Media Overlays Playback]]
+   - [[https://stackoverflow.com/questions/51185543/how-git-similarity-index-is-calculated][How git similarity index is calculated?]]
+   - [[https://support.gingerlabs.com/hc/en-us/articles/206060617-Recording-and-Playing-Audio][Notability]] пишет аудио параллельно вводимому от руки
    - [[http://ted.hyperland.com/myU/][Ted Nelson – My parallel universe]]
 
    [[https://freefeed.net/martian/32bca34f-a31e-40c2-816b-d997a7d07930][Пример запроса]] на параллельный текст аудио + книга.
@@ -858,9 +868,9 @@
 ** Ползучая автоматизация
 
    В системе нужны [[https://en.wikipedia.org/wiki/Hooking][хуки]], которые позволяют встроиться в жизненный цикл
-   хранимого в системе. Для ресурсов это создание, удаление,
-   модицикация, удаление. Для метаданных это добавление и удаление
-   единицы метаданных
+   хранимого в системе. Для ресурсов это [[wiki:Create,_read,_update_and_delete][CRUD]] (создание, считывание,
+   модицикация и удаление). Для метаданных это добавление и удаление
+   единицы метаданных.
 
    Эти хуки позволят в том числе реализовать какие-то базовые куски
    функионала. Дальше будет несколько примеров как я это вижу.
@@ -876,7 +886,7 @@
 
 *** Публикация
 
-    Навешивание атрибута "опубликовано в системе X" текст
+    После навешивание атрибута "опубликовано в системе X" на текст
     конвертируется в целевой формат и через API другой системы
     публикуется.
 
@@ -1169,8 +1179,13 @@
 
 *** Словарь иностранных слов
 
+    NOTE: Это старый кусок текста. Когда я это писал еще не было
+    сайтов в духе LinguaLeo и Skyeng, которые это как-то
+    реализовывают. Но я давно на них не смотрел и сейчас не могу
+    сказть, как это связано с тем, что ниже.
+
     Например берем субтитры на английском, тупо режем их на слова и
-    удаляем всякий очевидный мусор. ﻿Прикручиваем [[https://wordnet.princeton.edu/][WordNet﻿]]. Удаляем
+    удаляем всякий очевидный мусор. Прикручиваем [[wiki:WordNet][WordNet]]. Удаляем
     множественные числа, превосходные степени, глагольные формы,
     междометия, предлоги и местоимения. Считаем частотность. Находим
     самые частовстречающиеся 2000 слов ([[https://en.wikipedia.org/wiki/Basic_English]["core vocabulary"]]). Делаем
@@ -1191,10 +1206,15 @@
     запоминания, в которых будет учитываться часть речи ("мне
     встречалось это слово как глагол, а тут оно как существительное"),
     автоматически добавляться пример в котором слово попалось и будет
-    стоять ссылка на конретный источник, откуда слово взялось. Это
-    очень круто, потому что руками делать карточки вымораживает. Из
-    упоротых идей: можно скриншот делать из видео, где это слово
-    показыватеся.
+    стоять ссылка на конретный источник, откуда слово взялось ("[[capture][захват]]
+    должен сохранять контекст"). Это очень круто, потому что руками
+    делать карточки вымораживает. Из упоротых идей: можно скриншот
+    делать из видео, где это слово показыватеся.
+
+    В третьих, можно показывать сам текст с уже подсвеченными словами,
+    про которые ты не знаешь. На них можно сразу навешить ссылки в
+    словари и кнопку "создать карточку". Это пример [[representation-adaptive][адаптивной
+    репрезентации]].
 
     Во-вторых, можно оценивать лексическую сложность текста до
     прочтения.
@@ -1249,7 +1269,7 @@
    разные места автоматом, достигается максимальный охват. Это удобно
    читателям, это удобно авторам.
 
-   Вот [[https://freefeed.net/karabatov/d65a8372-b782-4e04-ae15-2da72218b04c][пример]] запроса на такое.
+   [[https://freefeed.net/karabatov/d65a8372-b782-4e04-ae15-2da72218b04c][Пример запроса]] на такое.
 
 * Задача хранения <<storage-bottle-neck>>
 
@@ -1591,14 +1611,14 @@
 * История <<history>>
 ** (1945) Vannevar Bush — As We May Think
 
-   Wiki: [[https://en.wikipedia.org/wiki/Memex][Memex]]
+   [[https://en.wikipedia.org/wiki/Memex][Memex]]
 
    The Atlantic -- [[http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/][As We May Think]]
    Life Magazine -- [[http://worrydream.com/refs/Bush%20-%20As%20We%20May%20Think%20(Life%20Magazine%209-10-1945).pdf][As We May Think]]
 
 ** (1967) Andries van Dam, Ted Nelson — Hypertext Editing System
 
-   Wiki: [[https://en.wikipedia.org/wiki/Hypertext_Editing_System][HES]]
+   [[https://en.wikipedia.org/wiki/Hypertext_Editing_System][HES]]
 
 ** (1968) Douglas Engelbart — oN-Line System
 
@@ -1609,17 +1629,17 @@
    области компьютеров для людей не было ничего, оказало огромное
    влияние на отрасль.
 
-   Wiki: [[https://en.wikipedia.org/wiki/The_Mother_of_All_Demos][The Mother of All Demos]] / [[https://en.wikipedia.org/wiki/NLS_(computer_system)][oN-Line System]]
+   [[https://en.wikipedia.org/wiki/The_Mother_of_All_Demos][The Mother of All Demos]] / [[https://en.wikipedia.org/wiki/NLS_(computer_system)][oN-Line System]]
 
    Видео: http://www.1968demo.org/
 
 ** (1968) Andries van Dam — File Retrieval and Editing System
 
-   Wiki: [[https://en.wikipedia.org/wiki/Hypertext_Editing_System][FRESS]]
+   [[https://en.wikipedia.org/wiki/Hypertext_Editing_System][FRESS]]
 
 ** (1985) Intermedia
 
-   Wiki: [[https://en.wikipedia.org/wiki/Intermedia_(hypertext)][Intermedia]]
+   [[https://en.wikipedia.org/wiki/Intermedia_(hypertext)][Intermedia]]
 
    #+BEGIN_QUOTE
        In 1983 Andries van Dam, William S. Shipp and Norman Meyrowitz founded
@@ -1666,11 +1686,11 @@
    : => all documents with property=value
    : => all properties, except used
    : ls /some/root/${property0}/${value0}/${property1}/${property1} ...
-   : => all documents with property0=value0 & property1=value0
+   : => all documents with property0=value0 & property1=value1
    : => all other properties, except property0 and property1
 
    Инкрементный поиск — сложная штука, если количество полей и их
-   значений увеличивается. Но, вимомо, можно делать сохраненные
+   значений увеличивается. Но, видимо, можно делать сохраненные
    запросы с помощью символических ссылок.
 
    [[http://web.mit.edu/6.826/archive/S97/13-Gifford-Semantic-file-systems-paper.pdf][Paper]]
@@ -1681,13 +1701,13 @@
    есть классы, наследование, всякие прочие штуки. Для 1993 года
    неплохо.
 
-   Wiki: [[https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol][LDAP]]
+   [[https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol][LDAP]]
 
    [[http://www.zytrax.com/books/ldap/][LDAP for Rocket Scientists]]
 
 ** (1996) Eric Freeman and David Gelertner — Lifestreams
 
-   Wiki: [[https://en.wikipedia.org/wiki/Lifestreaming][Lifestreaming]]
+   [[https://en.wikipedia.org/wiki/Lifestreaming][Lifestreaming]]
 
 ** (1999) Presto
 
@@ -1729,7 +1749,7 @@
    Скроблинг как решение задачи [[capture][захвата]] прослушиваемой
    музыки. Забирает информацию о треках и исполнителях из MusicBrainz.
 
-   Wiki: [[https://en.wikipedia.org/wiki/Last.fm][Last.fm]]
+   [[https://en.wikipedia.org/wiki/Last.fm][Last.fm]]
 
 ** (2001) Tim Berners-Lee — Semantic Web
 
@@ -1742,12 +1762,12 @@
 
    Как это выглядит сейчас - [[https://www.w3.org/standards/semanticweb/][W3C / Semantic Web]]
 
-   Wiki - [[https://en.wikipedia.org/wiki/Semantic_Web][Semantic web]]
+   [[https://en.wikipedia.org/wiki/Semantic_Web][Semantic web]]
 
 ** (2001) Tinderbox
 
    По сути – mindmap. Есть заметки, у них есть классы (прототипы на
-   местном сленге) и аттрибуты. Из классов можно делать иерархии.
+   местном сленге) и атрибуты. Из классов можно делать иерархии.
 
    Есть несколько способов отображения заметок: mindmap (с
    возможностью заныривания в поддерево), timeline, outline, карта. В
@@ -1761,14 +1781,14 @@
 
    Tinderbox не является редактором гипертекста (и тем более блочным
    редактором), связи у него существуют только на уровне
-   заметок. Метаданные тоже можно навешивать на уровне заметок. Текст
-   по-прежнему лежит одним куском.
+   заметок. Метаданные тоже можно навешивать только на уровне
+   заметок. Текст по-прежнему лежит одним куском.
 
    Книга: [[http://www.markbernstein.org/][Mark Bernstein]] – [[http://www.eastgate.com/Tinderbox/TinderboxWay.html][The Tinderbox Way]]
 
    Сайт разработчика: [[http://www.markbernstein.org/][Mark Bernstein]] (MacOS only)
 
-   Wiki: [[https://en.wikipedia.org/wiki/Tinderbox_%28application_software%29][Tinderbox]]
+   [[https://en.wikipedia.org/wiki/Tinderbox_%28application_software%29][Tinderbox]]
 
 ** (2003) Joshua Schachter — Del.icio.us
 
@@ -1794,14 +1814,14 @@
    hCard, который позволяет выцепить из страницы контакты
    человека и импортировать их к себе. Верстка при этом не меняется.
 
-   Wiki - [[https://en.wikipedia.org/wiki/Microformat][Microformat]]
+   [[https://en.wikipedia.org/wiki/Microformat][Microformat]]
    Official site - [[https://microformats.org][microformats.org]]
 
 ** (2006) Calibre <<tool-calibre>>
 
    Книжный каталогизатор и конвервер.
 
-   Reference-mode в читалке. Решение проблемы идентификации для
+   [[https://manual.calibre-ebook.com/viewer.html#navigating-around-an-e-book][Reference-mode]] в читалке. Решение проблемы идентификации для
    электронных книг.
 
    https://calibre-ebook.com/
@@ -1822,7 +1842,7 @@
    Появление формата, который потом станет языком разметки для многих
    PIM.
 
-   Wiki - [[https://en.wikipedia.org/wiki/Markdown][Markdown]]
+   [[https://en.wikipedia.org/wiki/Markdown][Markdown]]
 
 ** (2007) EPUB
 
@@ -1830,7 +1850,7 @@
    который придет на смену PDF. В нем слои репрезентации и хранения не
    объединены как в PDF, поэтому он лучше приспособлен для обработки.
 
-   Wiki - [[https://en.wikipedia.org/wiki/EPUB][EPUB]]
+   [[https://en.wikipedia.org/wiki/EPUB][EPUB]]
 
 ** (2007) William Jones — Keeping Found Things Found
 
@@ -1846,7 +1866,7 @@
    Вытаскивает структурированные данные из википедии, конвертит их в
    RDF, позволяет делать запросы на SPARQL.
 
-   Wiki: [[https://en.wikipedia.org/wiki/DBpedia][DBpedia]]
+   [[https://en.wikipedia.org/wiki/DBpedia][DBpedia]]
 
 ** (2007) Scrivener
 
@@ -1870,7 +1890,7 @@
    Язык запросов для датасетов на RDF дорос до того, что стал
    "official W3C Recommendation".
 
-   Wiki - [[https://en.wikipedia.org/wiki/SPARQL][SPARQL]]
+   [[https://en.wikipedia.org/wiki/SPARQL][SPARQL]]
 
    Книга - [[https://www.oreilly.com/library/view/learning-sparql-2nd/9781449371449/][Learning SPARQL (O'Reilly)]]
 
@@ -1878,7 +1898,7 @@
 
    Подкаст с Пачиковым: [[http://runetologia.podfm.ru/96/][Рунетология 45]]
 
-   Wiki: [[https://en.wikipedia.org/wiki/Evernote][Evernote]]
+   [[https://en.wikipedia.org/wiki/Evernote][Evernote]]
 
 ** (2009) Fluidinfo
 
@@ -1929,7 +1949,7 @@
 
 ** (2018) Notion
 
-   Wiki - [[https://en.wikipedia.org/wiki/Notion_(app)][Notion (app)]]
+   [[https://en.wikipedia.org/wiki/Notion_(app)][Notion (app)]]
 
 ** (2019) Trilium notes
 
