@@ -75,14 +75,14 @@
     Это та часть, которая про стык психологии (не психотерапии) и
     нейрофизиологии.
 
-    [[https://en.wikipedia.org/wiki/Memory][Человеческая память]] ограничена. Поэтому нужен инструмент который
+    [[wiki:Memory][Человеческая память]] ограничена. Поэтому нужен инструмент который
     помогает забывать лишнее, вспоминать нужное и наводить порядок в
     голове. Автоматизация дает возможность выкинуть во внешнюю память
     то, в чем нет необходимости для принятия решения сейчас и освободить
     место для актуальной задачи.
 
-    Человеческий [[https://en.wikipedia.org/wiki/Attention][фокус внимания]] ограничен. Переключения между разными
-    инструментами подтачивают фокус и сбивают [[https://en.wikipedia.org/wiki/Flow_(psychology)][поток]].
+    Человеческий [[wiki:Attention][фокус внимания]] ограничен. Переключения между разными
+    инструментами подтачивают фокус и сбивают [[wiki:Flow_(psychology)][поток]].
 
     Время человека тоже ограничено. Тратить его на то, что можно
     автоматизировать бессмысленно.
@@ -93,7 +93,7 @@
 
     Если вам не хватает памяти или внимания, их можно прочекать. Есть
     информационная перегрузка, и стремление объять необъятное, а есть
-    [[https://en.wikipedia.org/wiki/Attention_deficit_hyperactivity_disorder][ADHD]].
+    [[wiki:Attention_deficit_hyperactivity_disorder][ADHD]].
 
 *** Психологические механизмы
 
@@ -132,7 +132,7 @@
     Есть практики, нацеленные на обучение и исследование нового,
     например конспектирование.
 
-    Есть [[https://en.wikipedia.org/wiki/Quantified_self][quantified self]], который позволяет следить за изменениями в
+    Есть [[wiki:Quantified_self][quantified self]], который позволяет следить за изменениями в
     организме (но не только) с помощью носимых устройств. Вообще
     пытается многие вещи сделать исчислимыми.
 
@@ -178,7 +178,7 @@
    - математики могут рассказать как концептуализировать и
      представлять знания;
    - инженеры могут рассказать про софт и концепции его написания,
-     начиная с [[https://en.wikipedia.org/wiki/Don%27t_repeat_yourself][DRY]];
+     начиная с [[wiki:Don%27t_repeat_yourself][DRY]];
    - библиотекари и музейщики могут рассказать про то, как
      упорядочивают большие коллекции;
    - людям, которые пилят искусственный интеллект, нужно как-то
@@ -255,7 +255,7 @@
    страниц, что делать?
 
    Идентификация отделяет слой [[classification][классификации]] от слоя [[storage][хранения]]. После
-   того, как элемент добавлен в систему, ему присваивается [[https://en.wikipedia.org/wiki/Universally_unique_identifier][UUID]] и
+   того, как элемент добавлен в систему, ему присваивается [[wiki:Universally_unique_identifier][UUID]] и
    классификация осуществлется уже над UUID. Нельзя классифицировать
    прямые пути в файловую систему или веб. Если файл перенести в
    другое место, или сайт переехал на новый домен, то метаданные,
@@ -343,7 +343,7 @@
      это приносит пользу.
 
      У этого типа захвата есть минус -- ссылки на больших периодах
-     времени ненадежны, они [[https://en.wikipedia.org/wiki/Link_rot]["протухают"]]. В том числе поэтому были
+     времени ненадежны, они [[wiki:Link_rot]["протухают"]]. В том числе поэтому были
      придуманы web clippers. Они сохраняют веб-документ частично или
      полностью, чтобы потом к нему можно было обратиться, когда доступ
      к исходному ресурсу невозможен.
@@ -359,7 +359,7 @@
 
    Как описывать объекты хранящиеся в системе?
 
-   [[https://en.wikipedia.org/wiki/Metadata][Метаданные]] и [[https://en.wikipedia.org/wiki/Ontology_(information_science)][онтологии]].
+   [[wiki:Metadata][Метаданные]] и [[wiki:Ontology_(information_science)][онтологии]].
 
    Не все файлы нуждаются в семантике. Целая куча постоянно
    скачивается, просматривается и удаляется. Нет никакого смысла
@@ -405,17 +405,18 @@
 *** Как нарисовать множеством способов
 
     Одни и те же данные можно показывать в разном виде и рассматривать
-    под разными углами. Можно показать граф картинкой, но можно и
-    разложить в список.
-
-    Можно создавать задачи в таск-трекере как обычно, проставляя связи
-    "это сначала, это потом", но можно и показать в виде картинки
-    графа, что очевидно даст совсем другой взгляд на ситуацию.
+    под разными углами. Можно создавать задачи в таск-трекере как
+    обычно, проставляя связи "это сначала, это потом", но можно и
+    показать в виде картинки графа, что очевидно даст совсем другой
+    взгляд на ситуацию.
 
     Чтобы это сделать, хранение нужно выделять в слой. Если задачи
     нарисованы в графическом редакторе от руки, хранение будет
     совмещено с репрезентацией и отобразить это другим способом уже не
     получится автоматически.
+
+    Есть несколько стандартных способов отображения: список, дерево,
+    граф, календарь, таблица, диаграмма, таймлайн, карта.
 
     [[https://freefeed.net/augustratata/250154fb-9d4b-4b81-9fe3-16755f1b99df][Пример запроса]] на такое (есть структурированные заметки, нужно
     графическое представление).
@@ -428,7 +429,7 @@
     и прочее accessibility, речь про структурные изменения.
 
     В частности, про вариативность гипертекста была придумана
-    концепция [[https://en.wikipedia.org/wiki/Adaptive_hypermedia][adaptive hypermedia]]. Суть в том, что набор переходов с
+    концепция [[wiki:Adaptive_hypermedia][adaptive hypermedia]]. Суть в том, что набор переходов с
     конкретной страницы может быть оптимизирован под
     пользователя. Проставлять ссылки и увеличивать общую связность
     хорошо, но далеко не всегда это нужно отображать, потому что у
@@ -588,10 +589,10 @@
 
 *** Контекст
 
-   Несмотря на то, что [[https://en.wikipedia.org/wiki/Tag_(metadata)][теги]] формально являются [[https://en.wikipedia.org/wiki/Metadata][метаданными]], хранить в
+   Несмотря на то, что [[wiki:Tag_(metadata)][теги]] формально являются [[wiki:Metadata][метаданными]], хранить в
    них большинство форматов метаданных невозможно. У них нет для этого
    достаточной выразительной мощи, которую представляет
-   [[https://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model][entity–attribute–value model]]. По-прежнему появляются инструменты,
+   [[wiki:Entity%E2%80%93attribute%E2%80%93value_model][entity–attribute–value model]]. По-прежнему появляются инструменты,
    которые предоставляют теги как единственный формат метаданных. Для
    меня это использование инструмента [[structure][структурирования]] для
    [[classification][классификации]], то есть не по назначению.
@@ -672,7 +673,7 @@
      пользователя в FreeFeed.
 
      В хвосте должна быть какая-то навигация, со всеми уже знакомыми
-     инструментами: полнотекстовый поиск, [[https://en.wikipedia.org/wiki/Faceted_classification][фасетная классификация]] и
+     инструментами: полнотекстовый поиск, [[wiki:Faceted_classification][фасетная классификация]] и
      сохраненные заросы. Чтобы прийдя в контекст, можно было например
      показать все видео или ресурсы другого типа, поискать текст или
      выполнить какую-то более сложную выборку.
@@ -729,7 +730,7 @@
 
      Мне известно про два инструмента, которые могут помочь для
      отображения динамического дерева в файловую систему и сохранения
-     файловой семантики: [[https://en.wikipedia.org/wiki/Virtual_file_system][виртуальные файловой системы]] и [[https://en.wikipedia.org/wiki/WebDAV][WebDAV]].
+     файловой семантики: [[wiki:Virtual_file_system][виртуальные файловой системы]] и [[wiki:WebDAV][WebDAV]].
 
      Если виртуальная файловая система позволяет ускорить отображение
      динамического дерева в файловую систему, то WebDAV позволяет
@@ -737,14 +738,14 @@
      инструменты, изготовленные для HTTP.
 
      Когда заходит речь про отображение в файловую систему часто
-     вспоминают про [[https://en.wikipedia.org/wiki/Hard_link][hard links]]. Под Windows жесткие ссылки тоже есть,
+     вспоминают про [[wiki:Hard_link][hard links]]. Под Windows жесткие ссылки тоже есть,
      так что возможно это даже кросс-платформенное решение. Если бы
      речь шла только про файлы, это бы было отличное решение, но часть
      данных в системе файлами не представлена, поэтому hard links не
      подойдут.
 
      Ссылки:
-     - виртуальная файловая система для Linux -- [[https://en.wikipedia.org/wiki/Filesystem_in_Userspace][FUSE]]
+     - виртуальная файловая система для Linux -- [[wiki:Filesystem_in_Userspace][FUSE]]
      - биндинги FUSE для ruby: [[https://github.com/lwoggardner/rfusefs][rbusefs]]
      - пример использования этих биндингов -- [[https://gist.github.com/teksisto/f35447da6e8079cfbe93][бесконечные рандомные pdf]]
 
@@ -774,7 +775,7 @@
     Контекст есть у каждого ресурса. То есть есть как минимум какой-то
     контекст по-умолчанию в который входят:
 
-    - все ресурсы, которые ссылаются на данный ([[https://en.wikipedia.org/wiki/Backlink][back links]]);
+    - все ресурсы, которые ссылаются на данный ([[wiki:Backlink][back links]]);
     - все ресурсы на которые ссылается он сам;
     - версии этого ресурса (как в смысле "версионность текста", так и
       в смысле "разные редакции/переводы одной книги").
@@ -865,7 +866,7 @@
    - [[http://www.supernova-soft.com/wpsite/products/text-aligner/create-parallel-text-for-language-lerning/][Supernova Aligner]]
 
    Ссылки:
-   - [[https://en.wikipedia.org/wiki/Parallel_text][Parallel text]]
+   - [[wiki:Parallel_text][Parallel text]]
    - [[wiki:Matroska][Matroska (mkv)]] как и другие медиа-контейнеры параллелит несколько
      медиа потоков (текстов)
    - [[https://www.w3.org/Submission/epub-a11y/#sec-mo][EPUB Accessibility 1.0 — Media Overlays Playback]]
@@ -879,7 +880,7 @@
 
 ** Ползучая автоматизация
 
-   В системе нужны [[https://en.wikipedia.org/wiki/Hooking][хуки]], которые позволяют встроиться в жизненный цикл
+   В системе нужны [[wiki:Hooking][хуки]], которые позволяют встроиться в жизненный цикл
    хранимого в системе. Для ресурсов это [[wiki:Create,_read,_update_and_delete][CRUD]] (создание, считывание,
    модицикация и удаление). Для метаданных это добавление и удаление
    единицы метаданных.
@@ -894,7 +895,7 @@
     выполнения update на ресурс (например параграф) в системе
     срабатывает создание нового параграфа, который слинкован с
     текущим, в котором хранится старый текст. Получается такой
-    [[https://en.wikipedia.org/wiki/Copy-on-write][copy-on-write]].
+    [[wiki:Copy-on-write][copy-on-write]].
 
 *** Публикация
 
@@ -1115,7 +1116,7 @@
 
     Играть в эту игру можно просто с самим собой, находя противоречия
     как в себе, так и в окружающем мире. Но есть и вторая цель –
-    сделать какой-то аналог [[https://en.wikipedia.org/wiki/Debate#Student_debating_societies][дискуссионного клуба]]. Сбор best arguments,
+    сделать какой-то аналог [[wiki:Debate#Student_debating_societies][дискуссионного клуба]]. Сбор best arguments,
     за и против какой-нибудь идеи.
 
     Конечная цель игры – синтез разных мнений.
@@ -1203,7 +1204,7 @@
     удаляем всякий очевидный мусор. Прикручиваем [[wiki:WordNet][WordNet]]. Удаляем
     множественные числа, превосходные степени, глагольные формы,
     междометия, предлоги и местоимения. Считаем частотность. Находим
-    самые частовстречающиеся 2000 слов ([[https://en.wikipedia.org/wiki/Basic_English]["core vocabulary"]]). Делаем
+    самые частовстречающиеся 2000 слов ([[wiki:Basic_English]["core vocabulary"]]). Делаем
     интерфейс, в котором пользователь может отметить знает он это
     слово или не знает (там не надо думать, если сомневаешься,
     говоришь, что не знаешь). На вычитку 1000 слов у меня уходило
@@ -1293,7 +1294,7 @@
    мелко нарезаны.
 
    "Физически" многие ресурсы хранятся все равно в файловой системе,
-   базе или вебе. В базу они попадают как [[https://en.wikipedia.org/wiki/URL][URL]] (который "location on a
+   базе или вебе. В базу они попадают как [[wiki:URL][URL]] (который "location on a
    computer network and a mechanism for retrieving it"). URL
    обслуживают какие-то хендлеры протоколов, но внутри системы это
    получает уникальный идентификатор и все дальнейшие манипуляции
@@ -1305,7 +1306,7 @@
    проблему. Причем продалбывает намерянно и за сотни нефти, потому
    что исходит из [[open-world-assumtion][open world assumtion]].
 
-   Сначала про него можно почитать в статье [[https://en.wikipedia.org/wiki/Resource_Description_Framework][RDF]] на википедии, а потом
+   Сначала про него можно почитать в статье [[wiki:Resource_Description_Framework][RDF]] на википедии, а потом
    перейти к трем книжкам:
 
    - [[https://mitpress.mit.edu/books/semantic-web-primer-second-edition][A Semantic Web Primer (MIT Press)]]
@@ -1320,7 +1321,7 @@
    RDF – это идея, что данные хранятся в графе. Хранить этот граф и
    управлять им можно по-разному. Сразу можно сказать, что лучше всего
    хранить RDF в специально оптимизированном для этого хранилище —
-   [[https://en.wikipedia.org/wiki/Triplestore][триплсторе]], но поскольку разговоры про другие варианты всплывают
+   [[wiki:Triplestore][триплсторе]], но поскольку разговоры про другие варианты всплывают
    каждый раз, хочется зафиксировать что уже было расмотрено.
 
 *** Реляционный подход - одна таблица под один тип ресурса
@@ -1352,7 +1353,7 @@
     хранить деревья, упорядоченные и не упорядоченные списки, не
     прибегая к упоротому способу ~rdf:next~.
 
-    В таблице =Things= включен [[https://en.wikipedia.org/wiki/Single_Table_Inheritance][single-table inheritance]], который
+    В таблице =Things= включен [[wiki:Single_Table_Inheritance][single-table inheritance]], который
     выгружает ресурсы в соответствующие класы в коде.
 
     Валидации делаются засчет того, что у ресурсов типа =Relationships= в
@@ -1420,7 +1421,7 @@
 
 *** Семантика
 
-    [[https://en.wikipedia.org/wiki/Triplestore][Триплстор]], [[https://en.wikipedia.org/wiki/Semantic_reasoner][ризонер]], запросы на [[https://en.wikipedia.org/wiki/SPARQL][SPARQL]]. Интерфейс на
+    [[wiki:Triplestore][Триплстор]], [[wiki:Semantic_reasoner][ризонер]], запросы на [[wiki:SPARQL][SPARQL]]. Интерфейс на
     рельсах. Моделей нет. Контроллер по сути один –
     ~ResourcesController~. В основном надо рисовать партиалы для
     отрисовки ресурсов конретного класса с указанной детализаций и
@@ -1597,7 +1598,7 @@
 ** Проблемы rdf
 *** Open world assumption <<open-world-assumtion>>
 
-    RDF разрабатывался для semantic web и основывается на [[https://en.wikipedia.org/wiki/Open-world_assumption][open world
+    RDF разрабатывался для semantic web и основывается на [[wiki:Open-world_assumption][open world
     assumption]]. В нем многое сделано хорошо, но это мешает возможности
     хранения в нем жестко упорядоченных структур. Все контейнеры
     подрузамевают, что между элементами могут быть еще какие-то другие
@@ -1626,14 +1627,14 @@
 * История <<history>>
 ** (1945) Vannevar Bush — As We May Think
 
-   [[https://en.wikipedia.org/wiki/Memex][Memex]]
+   [[wiki:Memex][Memex]]
 
    The Atlantic -- [[http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/][As We May Think]]
    Life Magazine -- [[http://worrydream.com/refs/Bush%20-%20As%20We%20May%20Think%20(Life%20Magazine%209-10-1945).pdf][As We May Think]]
 
 ** (1967) Andries van Dam, Ted Nelson — Hypertext Editing System
 
-   [[https://en.wikipedia.org/wiki/Hypertext_Editing_System][HES]]
+   [[wiki:Hypertext_Editing_System][HES]]
 
 ** (1968) Douglas Engelbart — oN-Line System
 
@@ -1644,17 +1645,17 @@
    области компьютеров для людей не было ничего, оказало огромное
    влияние на отрасль.
 
-   [[https://en.wikipedia.org/wiki/The_Mother_of_All_Demos][The Mother of All Demos]] / [[https://en.wikipedia.org/wiki/NLS_(computer_system)][oN-Line System]]
+   [[wiki:The_Mother_of_All_Demos][The Mother of All Demos]] / [[wiki:NLS_(computer_system)][oN-Line System]]
 
    Видео: http://www.1968demo.org/
 
 ** (1968) Andries van Dam — File Retrieval and Editing System
 
-   [[https://en.wikipedia.org/wiki/Hypertext_Editing_System][FRESS]]
+   [[wiki:Hypertext_Editing_System][FRESS]]
 
 ** (1985) Intermedia
 
-   [[https://en.wikipedia.org/wiki/Intermedia_(hypertext)][Intermedia]]
+   [[wiki:Intermedia_(hypertext)][Intermedia]]
 
    #+BEGIN_QUOTE
        In 1983 Andries van Dam, William S. Shipp and Norman Meyrowitz founded
@@ -1668,8 +1669,8 @@
 ** (1982) Ted Nelson — Literary Machines
 
    #+BEGIN_QUOTE
-     [[https://en.wikipedia.org/wiki/Ted_Nelson][Ted Nelson]] coined the term [[https://www.mediawiki.org/wiki/Transclusion]["transclusion"]], as well as [[https://en.wikipedia.org/wiki/hypertext]["hypertext"]]
-     and [[https://en.wikipedia.org/wiki/hypermedia]["hypermedia"]], in his 1982 book [[https://en.wikipedia.org/wiki/Literary_Machines][Literary Machines]].
+     [[wiki:Ted_Nelson][Ted Nelson]] coined the term [[https://www.mediawiki.org/wiki/Transclusion]["transclusion"]], as well as [[wiki:hypertext]["hypertext"]]
+     and [[wiki:hypermedia]["hypermedia"]], in his 1982 book [[wiki:Literary_Machines][Literary Machines]].
    #+END_QUOTE
 
 ** (1987) HyperCard
@@ -1685,13 +1686,13 @@
    С HyperCard связано много историй, можно просто [[https://www.google.com/search?q=hypercard][открывать гугл]] и
    читать.
 
-   [[https://en.wikipedia.org/wiki/HyperCard][Wiki]]
+   [[wiki:HyperCard][Wiki]]
 
    [[https://vintageapple.org/macprogramming/pdf/HyperCard_Users_Guide_1987.pdf][HyperCard User Manual (1987)]]
 
 ** (1991) David Gifford — Semantic file systems
 
-   Если коротко, то это [[https://en.wikipedia.org/wiki/Virtual_file_system][виртуальная файловая система]], в которой для
+   Если коротко, то это [[wiki:Virtual_file_system][виртуальная файловая система]], в которой для
    документов добавляются атрибуты. Инкрементный поиск по ней выглядит
    так:
 
@@ -1716,13 +1717,13 @@
    есть классы, наследование, всякие прочие штуки. Для 1993 года
    неплохо.
 
-   [[https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol][LDAP]]
+   [[wiki:Lightweight_Directory_Access_Protocol][LDAP]]
 
    [[http://www.zytrax.com/books/ldap/][LDAP for Rocket Scientists]]
 
 ** (1996) Eric Freeman and David Gelertner — Lifestreams
 
-   [[https://en.wikipedia.org/wiki/Lifestreaming][Lifestreaming]]
+   [[wiki:Lifestreaming][Lifestreaming]]
 
 ** (1999) Presto
 
@@ -1757,14 +1758,14 @@
    Подход к решению проблемы идентификации частей документа. Добавляет
    для блочных элементов в html якоря со ссылками. Реализация идеи Нельсона.
 
-   https://en.wikipedia.org/wiki/Purple_Numbers
+   wiki:Purple_Numbers
 
 ** (2002) Last.fm
 
    Скроблинг как решение задачи [[capture][захвата]] прослушиваемой
    музыки. Забирает информацию о треках и исполнителях из MusicBrainz.
 
-   [[https://en.wikipedia.org/wiki/Last.fm][Last.fm]]
+   [[wiki:Last.fm][Last.fm]]
 
 ** (2001) Tim Berners-Lee — Semantic Web
 
@@ -1777,7 +1778,7 @@
 
    Как это выглядит сейчас - [[https://www.w3.org/standards/semanticweb/][W3C / Semantic Web]]
 
-   [[https://en.wikipedia.org/wiki/Semantic_Web][Semantic web]]
+   [[wiki:Semantic_Web][Semantic web]]
 
 ** (2001) Tinderbox
 
@@ -1803,7 +1804,7 @@
 
    Сайт разработчика: [[http://www.markbernstein.org/][Mark Bernstein]] (MacOS only)
 
-   [[https://en.wikipedia.org/wiki/Tinderbox_%28application_software%29][Tinderbox]]
+   [[wiki:Tinderbox_%28application_software%29][Tinderbox]]
 
 ** (2003) Joshua Schachter — Del.icio.us
 
@@ -1829,7 +1830,7 @@
    hCard, который позволяет выцепить из страницы контакты
    человека и импортировать их к себе. Верстка при этом не меняется.
 
-   [[https://en.wikipedia.org/wiki/Microformat][Microformat]]
+   [[wiki:Microformat][Microformat]]
    Official site - [[https://microformats.org][microformats.org]]
 
 ** (2006) Calibre <<tool-calibre>>
@@ -1857,7 +1858,7 @@
    Появление формата, который потом станет языком разметки для многих
    PIM.
 
-   [[https://en.wikipedia.org/wiki/Markdown][Markdown]]
+   [[wiki:Markdown][Markdown]]
 
 ** (2007) EPUB
 
@@ -1865,7 +1866,7 @@
    который придет на смену PDF. В нем слои репрезентации и хранения не
    объединены как в PDF, поэтому он лучше приспособлен для обработки.
 
-   [[https://en.wikipedia.org/wiki/EPUB][EPUB]]
+   [[wiki:EPUB][EPUB]]
 
 ** (2007) William Jones — Keeping Found Things Found
 
@@ -1881,7 +1882,7 @@
    Вытаскивает структурированные данные из википедии, конвертит их в
    RDF, позволяет делать запросы на SPARQL.
 
-   [[https://en.wikipedia.org/wiki/DBpedia][DBpedia]]
+   [[wiki:DBpedia][DBpedia]]
 
 ** (2007) Scrivener
 
@@ -1905,7 +1906,7 @@
    Язык запросов для датасетов на RDF дорос до того, что стал
    "official W3C Recommendation".
 
-   [[https://en.wikipedia.org/wiki/SPARQL][SPARQL]]
+   [[wiki:SPARQL][SPARQL]]
 
    Книга - [[https://www.oreilly.com/library/view/learning-sparql-2nd/9781449371449/][Learning SPARQL (O'Reilly)]]
 
@@ -1913,7 +1914,7 @@
 
    Подкаст с Пачиковым: [[http://runetologia.podfm.ru/96/][Рунетология 45]]
 
-   [[https://en.wikipedia.org/wiki/Evernote][Evernote]]
+   [[wiki:Evernote][Evernote]]
 
 ** (2009) Fluidinfo
 
@@ -1942,11 +1943,11 @@
 
 ** (2010) Chandler
 
-   [[https://en.wikipedia.org/wiki/Chandler_(software)][Wiki]] / [[http://chandlerproject.org/][Official site]]
+   [[wiki:Chandler_(software)][Wiki]] / [[http://chandlerproject.org/][Official site]]
 
 ** (2011) Smallest Federated Wiki
 
-   Создатель первой вики, [[https://en.wikipedia.org/wiki/Ward_Cunningham][Ward Cunningham]], делает федеративную
+   Создатель первой вики, [[wiki:Ward_Cunningham][Ward Cunningham]], делает федеративную
    вики. Страницы можно форкать и поддерживать локально свою версию.
 
    http://fed.wiki.org
@@ -1964,7 +1965,7 @@
 
 ** (2018) Notion
 
-   [[https://en.wikipedia.org/wiki/Notion_(app)][Notion (app)]]
+   [[wiki:Notion_(app)][Notion (app)]]
 
 ** (2019) Trilium notes
 
@@ -2045,15 +2046,14 @@
 
 ** NEPOMUK
 
-   https://en.wikipedia.org/wiki/NEPOMUK_%28framework%29
+   [[wiki:NEPOMUK_%28framework%29][NEPOMUK]]
 
 ** Google
 ** Google Reader
 ** RSS
 ** Atom
 ** WWW
-
-
+** Mendeley
 * Ссылки <<bookmarks>>
 ** FreeFeed
 
@@ -2109,33 +2109,33 @@
 
 ** Термины
 
-   - [[https://en.wikipedia.org/wiki/Information_science][Information science]]
-   - [[https://en.wikipedia.org/wiki/Conceptualization_(information_science)][Conceptualization (information science)]]
-   - [[https://en.wikipedia.org/wiki/Personal_information_manager][Personal information manager]]
-   - [[https://en.wikipedia.org/wiki/Semantic_Web][Semantic Web]]
-   - [[https://en.wikipedia.org/wiki/Semantic_desktop][Semantic desktop]]
-   - [[https://en.wikipedia.org/wiki/Quantified_self][Quantified self]]
-   - [[https://en.wikipedia.org/wiki/Personal_knowledge_base][Personal knowledge base]]
-   - [[https://en.wikipedia.org/wiki/Virtual_folder][Virtual folder]]
-   - [[https://en.wikipedia.org/wiki/Faceted_classification][Faceted classification]]
-   - [[https://en.wikipedia.org/wiki/Metadata][Metadata]]
-   - [[https://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model][Entity–attribute–value model]]
-   - [[https://en.wikipedia.org/wiki/Adaptive_hypermedia][Adaptive hypermedia]]
-   - [[https://en.wikipedia.org/wiki/Hypertext][Hypertext]]
-   - [[https://en.wikipedia.org/wiki/Semantic_desktop][Semantic desktop]]
-   - [[https://en.wikipedia.org/wiki/Parallel_text][Parallel text]]
-   - [[https://en.wikipedia.org/wiki/Transclusion][Transclusion]]
-   - [[https://en.wikipedia.org/wiki/Graph_database][Graph database]]
-   - [[https://en.wikipedia.org/wiki/Universally_unique_identifier][Universally unique identifier (UUID)]]
-   - [[https://en.wikipedia.org/wiki/Uniform_Resource_Identifier][URI]] / [[https://en.wikipedia.org/wiki/Uniform_Resource_Locator][URL]] / [[https://en.wikipedia.org/wiki/Uniform_Resource_Name][URN]]
-   - [[https://en.wikipedia.org/wiki/Dublin_Core][Dublin Core]]
+   - [[wiki:Information_science][Information science]]
+   - [[wiki:Conceptualization_(information_science)][Conceptualization (information science)]]
+   - [[wiki:Personal_information_manager][Personal information manager]]
+   - [[wiki:Semantic_Web][Semantic Web]]
+   - [[wiki:Semantic_desktop][Semantic desktop]]
+   - [[wiki:Quantified_self][Quantified self]]
+   - [[wiki:Personal_knowledge_base][Personal knowledge base]]
+   - [[wiki:Virtual_folder][Virtual folder]]
+   - [[wiki:Faceted_classification][Faceted classification]]
+   - [[wiki:Metadata][Metadata]]
+   - [[wiki:Entity%E2%80%93attribute%E2%80%93value_model][Entity–attribute–value model]]
+   - [[wiki:Adaptive_hypermedia][Adaptive hypermedia]]
+   - [[wiki:Hypertext][Hypertext]]
+   - [[wiki:Semantic_desktop][Semantic desktop]]
+   - [[wiki:Parallel_text][Parallel text]]
+   - [[wiki:Transclusion][Transclusion]]
+   - [[wiki:Graph_database][Graph database]]
+   - [[wiki:Universally_unique_identifier][Universally unique identifier (UUID)]]
+   - [[wiki:Uniform_Resource_Identifier][URI]] / [[wiki:Uniform_Resource_Locator][URL]] / [[wiki:Uniform_Resource_Name][URN]]
+   - [[wiki:Dublin_Core][Dublin Core]]
 
 ** Люди
 
-   - [[https://en.wikipedia.org/wiki/Douglas_Engelbart][Douglas Engelbart]]
-   - [[https://en.wikipedia.org/wiki/Vannevar_Bush][Vannevar Bush]]
-   - [[https://en.wikipedia.org/wiki/Andries_van_Dam][Andries van Dam]]
-   - [[https://en.wikipedia.org/wiki/Ted_Nelson][Ted Nelson]]
+   - [[wiki:Douglas_Engelbart][Douglas Engelbart]]
+   - [[wiki:Vannevar_Bush][Vannevar Bush]]
+   - [[wiki:Andries_van_Dam][Andries van Dam]]
+   - [[wiki:Ted_Nelson][Ted Nelson]]
 
 ** Книги
 
