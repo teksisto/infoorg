@@ -265,7 +265,7 @@
    описывает, но и где оно лежит. Хранение должно быть отделено от
    доступа.
 
-** обавление данных <<capture>>
+** Добавление данных <<capture>>
 
    Как данные попадают в систему?
 
@@ -416,6 +416,9 @@
     нарисованы в графическом редакторе от руки, хранение будет
     совмещено с репрезентацией и отобразить это другим способом уже не
     получится автоматически.
+
+    [[https://freefeed.net/augustratata/250154fb-9d4b-4b81-9fe3-16755f1b99df][Пример запроса]] на такое (есть структурированные заметки, нужно
+    графическое представление).
 
 *** Множество способов отображения текста <<representation-adaptive>>
 
@@ -1992,6 +1995,34 @@
    [[https://news.ycombinator.com/item?id=18840990][Hacker News thread]]
 
 ** (2020) Obsidian.md
+** The Brain
+
+   https://www.thebrain.com/
+
+** Miro
+
+   https://miro.com/
+
+** Joplin
+
+   https://github.com/laurent22/joplin
+
+** Dynalist
+
+   http://dynalist.io/
+
+** DEVONthink
+
+   https://www.devontechnologies.com/apps/devonthink
+
+** InfraNodus
+
+   https://infranodus.com/
+
+** TiddlyWiki
+
+   http://tiddlywiki.com/
+
 ** Locker
 
    Метасервис по собиранию данных из разных веб-сервисов в единую
@@ -2016,9 +2047,12 @@
 
    https://en.wikipedia.org/wiki/NEPOMUK_%28framework%29
 
-** TiddlyWiki
+** Google
+** Google Reader
+** RSS
+** Atom
+** WWW
 
-   http://tiddlywiki.com/
 
 * Ссылки <<bookmarks>>
 ** FreeFeed
