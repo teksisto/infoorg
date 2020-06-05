@@ -1,4 +1,4 @@
-div[class*="outline-text"] a[href*="#org"] {
+div[class*="outline-text"] a[href*="#"] {
   background: url('../images/bring_front.png') no-repeat 100% 0;
   background-size: 1em 1em;
   padding-right: 1em;
