@@ -32,11 +32,18 @@ for image in $(find images -type f) ; do
     echo "  [[./$image]]"  >> $intermidiate_org
 done
 
+
+# Конвертация промежуточного org-файла в html. Название у файла будет
+# такое же, но с расширением html.
+#
 emacs -l ~/.emacs.d/init.el --visit  $intermidiate_org --batch -f org-html-export-to-html
 
 
 #rm $intermidiate_org
 
+# Конвертация промежуточного html в epub c помощью утилиты из набора
+# Calibre.
+#
 ebook-convert $intermidiate_html $output --max-toc-links $toc_size --extra-css css/epub.css
 
 #rm $intermidiate_html
