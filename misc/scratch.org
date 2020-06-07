@@ -96,6 +96,7 @@
     интернете). В этом случае адаптер просто не поддерживает эти
     операции.
 
+
 ** Del.icio.us
 
    Старая заметка про [[https://delicious.com][delicious]]:
@@ -231,3 +232,50 @@
     Третий запрос: из каждого ресурса типа ~Section~ надо достать
     свойство ~quotes~, которое ссылается на анонимный элемент дерева,
     который хранит список элементов класса ~Quote~, который нам и нужен.
+
+** Личностные конструкты
+
+   У Гибсона в [[wiki:Neuromancer][Нейроманте]] было понятие конструкта. Скорее всего, Гибсон
+   основывался на идее [[wiki:Personal_construct_theory][личностных конструктов Келли]]. Гибсон обозначал
+   разницу между искусственным интеллектом и конструктом и описывал его
+   так:
+
+   #+BEGIN_QUOTE
+     ROM personality matrix
+   #+END_QUOTE
+
+   #+BEGIN_QUOTE
+     It was disturbing to think of the Flatline as a construct, a
+     hardwired ROM cassette replicating a dead man's skills,
+     obsessions, kneejerk responses.
+   #+END_QUOTE
+
+   #+BEGIN_QUOTE
+     "Motive," the construct said. "Real motive problem, with an AI. Not
+     human, see?"
+
+     "Well, yeah, obviously."
+
+     "Nope. I mean, it's not human. And you can't get a handle on
+     it. Me, I'm not human either, but I respond like one. See?"
+
+     "Wait a sec," Case said. Are you sentient, or not?"
+
+     "Well, it feels like I am, kid, but I'm really just a bunch of
+     ROM. It's one of them, ah, philosophical questions, I guess...."
+     The ugly laughter sensation rattled down Case's spine. "But I
+     ain't likely to write you no poem, if you follow me. Your AI, it
+     just might. But it ain't no way human."
+   #+END_QUOTE
+
+   #+BEGIN_QUOTE
+     "You guys," the Finn said, "you're a pain. The Flatline here, if
+     you were all like him, it would be real simple. He's a construct,
+     just a buncha ROM, so he always does what I expect him to.
+   #+END_QUOTE
+
+   Дневник очень похож на конструкт меня самого, подключенный ко мне
+   самому. Без него я как Алиса в Стране Чудес -- все время меняюсь и
+   ничего не помню. Ведение дневника позволяет обойти собственную
+   неспособность воспринимать градиентные процессы на больших
+   промежутках времени.
