@@ -179,10 +179,10 @@
     напишут код. Более гибкий софт и система хранения данных позволит
     большему количеству людей самим поддерживать свои практики.
 
-*** Решение задач инфоорга людьми
+*** Делегирование
 
-    Некоторые задачи инфоорга можно решать людьми, но это
-    дорого. Берется человек и ему дается задание: сделай мне выжимку
+    Некоторые задачи инфоорга можно решать с помощью делегирования их
+    другим людям. Берется человек и ему дается задание: сделай мне выжимку
     из вот этой темы на пару листов, найди мне книги по этой теме,
     напомни мне о том, что мне надо что-то сделать.
 
@@ -510,14 +510,12 @@
     перехода, может стать любое слово.
 
     #+BEGIN_QUOTE
-      Adaptive hypermedia is the answer to the "lost in
-      hyperspace" syndrome, where the <strong>user has normally too
-      many links to choose from, and little knowledge about how to
-      proceed and select the most appropriate ones</strong> to
-      him/her. Adaptive hypermedia thus offers a selection of links or
-      content most appropriate to the current user.
-
-      --
+      Adaptive hypermedia is the answer to the "lost in hyperspace"
+      syndrome, where the user has normally too many links to choose
+      from, and little knowledge about how to proceed and select the
+      most appropriate ones to him/her. Adaptive hypermedia thus
+      offers a selection of links or content most appropriate to the
+      current user.
     #+END_QUOTE
 
 ** Интерфейс
