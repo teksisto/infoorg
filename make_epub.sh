@@ -20,7 +20,25 @@ cat $input >> $intermidiate_org
 # Убираем SETUPFILE. Для генерации EPUB нужен чистый HTML, без
 # дополнительного CSS, который делает тема read-the-org.
 #
-sed -i '/^#+SETUPFILE/d' $intermidiate_org
+
+ruby -e "
+     content = IO.readlines('$intermidiate_org')
+     content.reject! do |line|
+         line =~ /^\#\+SETUPFILE/
+     end
+     File.write('$intermidiate_org', content.join)
+"
+
+# Заменяем непечатный заголовок без номера в самом начале на слово
+# "Эпиграф".
+#
+ruby -e "
+     content = IO.readlines('$intermidiate_org')
+     content.map! do |line|
+         line.sub('* \nbsp{}', '* Эпиграф')
+     end
+     File.write('$intermidiate_org', content.join)
+"
 
 # Добавляем фальшивый заголовок и вставляем туда все картинки, чтобы
 # они попали в epub. Calibre их почему-то без этого удаляет из
