@@ -49,8 +49,9 @@
   По адресу [[https://teksisto.github.io/infoorg/][teksisto.github.io/infoorg]] всегда лежит самая свежая
   версия. Исходники в формате org-mode лежат в [[https://github.com/teksisto/infoorg][репозитории]] на GitHub.
 
-  Текст можно [[https://github.com/teksisto/infoorg/releases][скачать в формате epub]]. Сейчас я заливаю его руками, поэтому
-  сейчас он обновляется где-то раз в несколько дней. Под это тоже [[https://github.com/teksisto/infoorg/issues/3][есть issue]].
+  Текст можно [[https://github.com/teksisto/infoorg/releases][скачать в формате epub]]. На той же странице есть
+  RSS. Сейчас я заливаю epub руками, поэтому он обновляется где-то раз
+  в неделю. Под это [[https://github.com/teksisto/infoorg/issues/3][есть issue]].
 
   Ссылки маркируются иконками:
   - [[#history][внутренняя ссылка]] показывается с иконкой "bring front";
