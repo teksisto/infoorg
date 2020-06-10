@@ -4,7 +4,21 @@
 #+LINK: wiki https://en.wikipedia.org/wiki/%s
 #+OPTIONS: H:4
 
-[[./images/heaven.png]]
+* \nbsp{}
+  :PROPERTIES:
+  :UNNUMBERED: t
+  :END:
+
+  [[./images/heaven.png]]
+
+  #+BEGIN_QUOTE
+    J-BONE: Heaven. The heart and soul. This is where we fight back. We
+    strip the pictures from their 500-channel universe, recontextualize
+    it, then we spit the shit back at them. Special data. Things that'll
+    help people.
+
+    -- [[https://www.imdb.com/title/tt0113481/][Johnny Mnemonic (1995)]]
+  #+END_QUOTE
 
 * Про этот текст
 
@@ -68,15 +82,6 @@
   назад и думаю, что даже просто из набора ссылок в этом тексте я бы
   извлек тогда огромную пользу.
 
-  #+BEGIN_QUOTE
-    J-BONE: Heaven. The heart and soul. This is where we fight back. We
-    strip the pictures from their 500-channel universe, recontextualize
-    it, then we spit the shit back at them. Special data. Things that'll
-    help people.
-
-    -- [[https://www.imdb.com/title/tt0113481/][Johnny Mnemonic (1995)]]
-  #+END_QUOTE
-
 * Область инфоорга
   :PROPERTIES:
   :CUSTOM_ID: infoorg-context
@@ -127,6 +132,11 @@
       подойдет, и он не будет его этому учить. Но он может помочь ему
       выработать свой.
     #+END_QUOTE
+
+    Мне никогда не надо было объяснять зачем писать, я просто начал
+    вести дневник, потому что было не скем было разговаривать. Потом
+    выяснилось, что это оказывается полезным в других
+    областях. Например, писать документацию на работе.
 
     Можно выделять какие-то классы, но это огромная тема, сейчас я могу
     только перечислить что-то, чтобы было понятно о чем речь.
