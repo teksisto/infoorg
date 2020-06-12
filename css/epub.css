@@ -1,9 +1,3 @@
-a[href*="index_split"] {
-  background: url('../Images/bring_front.png') no-repeat 100% 0;
-  background-size: 1em 1em;
-  padding-right: 1em;
-}
-
 a[href*="wikipedia"] {
   background: url('../Images/wikipedia.png') no-repeat 100% 0;
   background-size: 1em 1em;
@@ -12,6 +6,18 @@ a[href*="wikipedia"] {
 
 a[href*="freefeed"] {
   background: url('../Images/freefeed.png') no-repeat 100% 0;
+  background-size: 1em 1em;
+  padding-right: 1em;
+}
+
+a[href*="w3.org"] {
+  background: url('../Images/w3.png') no-repeat 100% 0;
+  background-size: 1em 1em;
+  padding-right: 1em;
+}
+
+a[href*="index_split"] {
+  background: url('../Images/bring_front.png') no-repeat 100% 0;
   background-size: 1em 1em;
   padding-right: 1em;
 }
