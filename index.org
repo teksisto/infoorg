@@ -1,5 +1,5 @@
 #+TITLE: Infoorg
-#+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/web.css">
 #+LINK: wiki https://en.wikipedia.org/wiki/%s
 #+LINK: google https://www.google.com/search?q=%s
